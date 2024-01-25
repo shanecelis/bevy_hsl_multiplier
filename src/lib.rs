@@ -3,13 +3,11 @@
 use bevy::{
     asset::load_internal_asset,
     prelude::*,
-    render::render_resource::{AsBindGroup, ShaderRef, SpecializedMeshPipelineError},
+    render::render_resource::{AsBindGroup, ShaderRef},
     render::{
-        mesh::InnerMeshVertexBufferLayout,
-        render_resource::{RenderPipelineDescriptor, Shader},
+        render_resource::{Shader},
     },
-    sprite::{Material2d, Material2dKey, Material2dPlugin},
-    utils::Hashed,
+    sprite::{Material2d, Material2dPlugin},
 };
 
 // $ cargo install uuid-tools && uuid -o simple
