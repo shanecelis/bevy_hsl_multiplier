@@ -7,7 +7,7 @@
 This crate provides a shader that multiplies a texture's color in HSL color space; it can be applied to 2D
 and 3D objects on the [bevy game engine](https://bevyengine.org).
 
-![hsl multiplier example](https://github.com/shanecelis/bevy_terminal_shader/assets/54390/05308e0a-439f-4ae8-9aa2-07144222aa3e)
+![hsl multiplier example](https://github.com/shanecelis/bevy_hsl_multiplier/assets/54390/44ff4e83-0b3c-46aa-bc80-ddc51bf337f3)
 
 # Install
 
