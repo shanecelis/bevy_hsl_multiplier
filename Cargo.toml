@@ -1,10 +1,10 @@
 [package]
 name = "bevy_hsl_multiplier"
-description = "An old school terminal shader for the bevy game engine"
+description = "Multiply texture values in HSL color space"
 version = "0.1.0"
 edition = "2021"
 license = "MIT OR Apache-2.0 OR CC0-1.0"
-repository = "https://github.com/shanecelis/bevy_terminal_shader"
+repository = "https://github.com/shanecelis/bevy_hsl_multiplier"
 authors = ["Shane Celis"]
 keywords = ["gamedev", "bevy", "shaders", "graphics"]
 

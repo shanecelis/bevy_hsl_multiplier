@@ -16,7 +16,6 @@ use bevy::{
 pub const HSL_MULTIPLIER_SHADER_HANDLE: Handle<Shader> =
     Handle::weak_from_u128(0x681280e787334019a3a33a59e7629cea);
 
-/// Provides a [HslMultiplierMaterial][] that can be applied to 2D and 3D objects.
 pub struct HslMultiplierPlugin;
 
 impl Plugin for HslMultiplierPlugin {
@@ -44,18 +43,6 @@ impl Material2d for HslMultiplierMaterial {
     fn fragment_shader() -> ShaderRef {
         HSL_MULTIPLIER_SHADER_HANDLE.into()
     }
-
-    // fn specialize(
-    //     descriptor: &mut RenderPipelineDescriptor,
-    //     _layout: &Hashed<InnerMeshVertexBufferLayout>,
-    //     _key: Material2dKey<Self>,
-    // ) -> Result<(), SpecializedMeshPipelineError> {
-    //     // if key.bind_group_data.is_red {
-    //     let fragment = descriptor.fragment.as_mut().unwrap();
-    //     fragment.shader_defs.push("IS_2D".into());
-    //     // }
-    //     Ok(())
-    // }
 }
 
 #[derive(Asset, TypePath, AsBindGroup, Debug, Clone)]
