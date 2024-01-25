@@ -1,6 +1,8 @@
 //! Shows the terminal material rendered on a quad.
 
-use bevy::{prelude::*, sprite::MaterialMesh2dBundle,
+use bevy::{
+    prelude::*,
+    sprite::MaterialMesh2dBundle,
     window::{PresentMode, WindowTheme},
 };
 use bevy_hsl_multiplier::{HslMultiplierMaterial, HslMultiplierPlugin};
@@ -28,7 +30,9 @@ fn main() {
                     ..default()
                 }),
                 ..default()
-            }), HslMultiplierPlugin))
+            }),
+            HslMultiplierPlugin,
+        ))
         .add_systems(Startup, setup)
         .add_systems(Update, update_multiplier)
         .run();
@@ -56,9 +60,11 @@ fn setup(
     });
 }
 
-fn update_multiplier(q: Query<&mut Handle<HslMultiplierMaterial>>,
-                     mut materials: ResMut<Assets<HslMultiplierMaterial>>,
-                     time: Res<Time>) {
+fn update_multiplier(
+    q: Query<&mut Handle<HslMultiplierMaterial>>,
+    mut materials: ResMut<Assets<HslMultiplierMaterial>>,
+    time: Res<Time>,
+) {
     let h = q.single();
     let m = materials.get_mut(h).unwrap();
     let t = time.elapsed_seconds() / 2.0;

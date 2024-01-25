@@ -38,9 +38,11 @@ fn setup(
     });
 }
 
-fn update_multiplier(q: Query<&mut Handle<HslMultiplierMaterial>>,
-                     mut materials: ResMut<Assets<HslMultiplierMaterial>>,
-                     time: Res<Time>) {
+fn update_multiplier(
+    q: Query<&mut Handle<HslMultiplierMaterial>>,
+    mut materials: ResMut<Assets<HslMultiplierMaterial>>,
+    time: Res<Time>,
+) {
     let h = q.single();
     let m = materials.get_mut(h).unwrap();
     let t = time.elapsed_seconds() / 2.0;

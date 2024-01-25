@@ -60,8 +60,7 @@ impl Default for HslMultiplierMaterial {
         Self {
             hsla_multiplier: Vec4::ONE,
             color_texture: None,
-            alpha_mode: AlphaMode::default()
+            alpha_mode: AlphaMode::default(),
         }
     }
 }
-
