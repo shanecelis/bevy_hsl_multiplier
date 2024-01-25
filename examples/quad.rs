@@ -28,7 +28,6 @@ fn setup(
             hsla_multiplier: Vec4::new(1.0, 1.0, 1.0, 1.0),
             color_texture: Some(asset_server.load("rust_crab.png")),
             alpha_mode: AlphaMode::Opaque,
-
         }),
         ..default()
     });

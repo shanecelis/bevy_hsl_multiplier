@@ -24,7 +24,7 @@ impl Plugin for HslMultiplierPlugin {
         load_internal_asset!(
             app,
             HSL_MULTIPLIER_SHADER_HANDLE,
-            "../assets/shaders/terminal.wgsl",
+            "../assets/shaders/hsl_multiplier.wgsl",
             Shader::from_wgsl
         );
         app.add_plugins((
