@@ -1,0 +1,17 @@
+[package]
+name = "bevy_terminal_shader"
+description = "An old school terminal shader for the bevy game engine"
+version = "0.1.0"
+edition = "2021"
+license = "MIT OR Apache-2.0 OR CC0-1.0"
+repository = "https://github.com/shanecelis/bevy_terminal_shader"
+authors = ["Shane Celis"]
+keywords = ["gamedev", "bevy", "shaders", "graphics"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy = "0.12.1"
+
+[badges.maintenance]
+status = "actively-developed"
