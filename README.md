@@ -11,8 +11,16 @@ and 3D objects on the [bevy game engine](https://bevyengine.org).
 
 # Install
 
+Not actually available on crates.io yet.
+
 ``` sh
-cargo add bevy_hsl_multiplier
+# cargo add bevy_hsl_multiplier
+```
+
+But you can get it from the repo directly.
+
+``` sh
+cargo add --git https://github.com/shanecelis/bevy_hsl_multiplier.git
 ```
 
 # Usage
