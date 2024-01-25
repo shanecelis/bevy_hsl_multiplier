@@ -1,5 +1,5 @@
 [package]
-name = "bevy_terminal_shader"
+name = "bevy_hsl_multiplier"
 description = "An old school terminal shader for the bevy game engine"
 version = "0.1.0"
 edition = "2021"
